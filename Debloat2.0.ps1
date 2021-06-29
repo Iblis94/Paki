@@ -8987,7 +8987,6 @@ $Button8.Add_Click({
             }
             Write-Host "Disabling Xbox features..."
             Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
-            Get-AppxPackage "Microsoft.XboxIdentityProvider" | Remove-AppxPackage -ErrorAction SilentlyContinue
             Get-AppxPackage "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage
             Get-AppxPackage "Microsoft.XboxGameOverlay" | Remove-AppxPackage
             Get-AppxPackage "Microsoft.Xbox.TCUI" | Remove-AppxPackage
